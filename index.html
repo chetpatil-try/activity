@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Chetan Patil — BCA Student | Aspiring Software Developer. Building beautiful, performant web experiences." />
+  <title>Chetan Patil | Software Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Devicons for skill icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">CP<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-sm nav-cta">Hire Me</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- =========================================================
+       HERO
+  ========================================================= -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">👋 Hello, World! I'm</p>
+      <h1 class="hero-name reveal-up">Chetan Patil<span class="cursor-blink">_</span></h1>
+      <h2 class="hero-tagline reveal-up">
+        BCA Student | Aspiring Software Developer<span class="typed-text" id="typedText" hidden></span><span
+          class="type-cursor" hidden>|</span>
+      </h2>
+      <p class="hero-sub reveal-up">
+        A highly motivated BCA student and aspiring software developer with a strong foundation in programming and a
+        passion for creating impactful technological solutions.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+      <div class="hero-scroll reveal-up">
+        <span>Scroll down</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+
+    <div class="hero-badge">
+      <div class="badge-ring"></div>
+      <span class="badge-text">Available · for hire · Open to work ·&nbsp;</span>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT
+  ========================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal-up">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-photo-wrap">
+            <div class="about-photo-glow"></div>
+            <img src="profile.jpg" alt="Chetan Patil avatar" class="about-photo" />
+          </div>
+          <div class="about-stats">
+            <div class="stat-card glass">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Years Exp</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <p class="lead">
+            I'm a <strong>BCA Student & Aspiring Software Developer</strong> based in India,
+            passionate about crafting elegant code and learning new technologies.
+          </p>
+          <p>
+            A self-motivated developer seeking to leverage my technical skills and passion for coding to build
+            innovative applications and grow as a tech professional. I care deeply about
+            <strong>learning</strong>, <strong>problem-solving</strong>, and <strong>building impactful
+              solutions</strong>.
+          </p>
+          <p>
+            When I'm not studying or building projects, you'll find me participating in hackathons to test my skills and
+            collaborate with others in the tech community.
+          </p>
+
+          <div class="about-tags">
+            <span class="tag">⚡ Fast Learner</span>
+            <span class="tag">🎨 Passionate Coder</span>
+            <span class="tag">🌍 Adaptable</span>
+            <span class="tag">🤝 Team Player</span>
+            <span class="tag">💡 Hackathon Enthusiast</span>
+            <span class="tag">💻 Tech Geek</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary mt-2">Download CV&nbsp;↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS
+  ========================================================= -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal-up">Tech <span class="accent">Stack</span></h2>
+      <p class="section-sub reveal-up">Tools &amp; technologies I work with every day</p>
+
+      <div class="skills-categories">
+
+        <div class="skill-category reveal-up">
+          <h3 class="category-title">Frontend</h3>
+          <div class="skill-grid">
+            <div class="skill-chip glass"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+            <div class="skill-chip glass"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+            <div class="skill-chip glass"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skill-chip glass"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+            <div class="skill-chip glass"><i class="devicon-react-original colored"></i><span>React</span></div>
+            <div class="skill-chip glass"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up">
+          <h3 class="category-title">Backend</h3>
+          <div class="skill-grid">
+            <div class="skill-chip glass"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+            <div class="skill-chip glass"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="skill-chip glass"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+            <div class="skill-chip glass"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+            <div class="skill-chip glass"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-up">
+          <h3 class="category-title">DevOps &amp; Tools</h3>
+          <div class="skill-grid">
+            <div class="skill-chip glass"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+            <div class="skill-chip glass"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            <div class="skill-chip glass"><i class="devicon-github-original"></i><span>GitHub</span></div>
+            <div class="skill-chip glass"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROJECTS
+  ========================================================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal-up">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub reveal-up">A selection of work I'm most proud of</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card glass reveal-up" id="project-1">
+          <div class="project-img-wrap">
+            <div class="project-img" style="background: linear-gradient(135deg,#00f5ff22,#a855f722);">
+              <div class="project-icon">🏦</div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-btn" aria-label="GitHub" title="View code">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" />
+                </svg>
+              </a>
+              <a href="#" class="icon-btn" aria-label="Live Demo" title="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">01</span>
+            <h3 class="project-title">FinGrow | Financial Literacy Web Application</h3>
+            <p class="project-desc">
+              Interactive platform for financial education with gamified learning, featuring a quiz system with XP
+              rewards, AI chatbot integration, and a progress tracking dashboard.
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Python</span>
+              <span class="tag">Gamification</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass reveal-up" id="project-2">
+          <div class="project-img-wrap">
+            <div class="project-img" style="background: linear-gradient(135deg,#a855f722,#f97316 22);">
+              <div class="project-icon">🛒</div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" />
+                </svg>
+              </a>
+              <a href="#" class="icon-btn" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">02</span>
+            <h3 class="project-title">Sign Language Detection System</h3>
+            <p class="project-desc">
+              Real-time gesture recognition system using computer vision. Features hand gesture detection using
+              MediaPipe, machine learning classification, and gesture-to-text conversion.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">MediaPipe</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Computer Vision</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass reveal-up" id="project-3">
+          <div class="project-img-wrap">
+            <div class="project-img" style="background: linear-gradient(135deg,#22c55e22,#00f5ff22);">
+              <div class="project-icon">♻️</div>
+            </div>
+            <div class="project-links">
+              <a href="#" class="icon-btn" aria-label="GitHub" title="View code">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" />
+                </svg>
+              </a>
+              <a href="#" class="icon-btn" aria-label="Live Demo" title="Live demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-number">03</span>
+            <h3 class="project-title">Smart Waste Management System</h3>
+            <p class="project-desc">
+              An intelligent spatial analysis platform that optimizes municipal waste collection. It leverages real-time
+              ML heatmaps to identify high-density zones and computes optimal shortest-paths for logistics
+              vehicles—dramatically reducing fuel consumption and time.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Django</span>
+
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- =========================================================
+       EXPERIENCE & EDUCATION TIMELINE
+  ========================================================= -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal-up">Education & <span class="accent">Experience</span></h2>
+      <p class="section-sub reveal-up">My academic background and professional journey so far</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up" id="exp-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">BCA – Bachelor of Computer Applications</h3>
+                <span class="tl-company">RCP IMRD · Shirpur, India</span>
+              </div>
+              <span class="tl-date">Ongoing</span>
+            </div>
+            <ul class="tl-list">
+              <li>Currently pursuing BCA with a focus on comprehensive software development and programming skills.</li>
+              <li>Maintained an excellent academic record with a <strong>CGPA of 9.55</strong>.</li>
+              <li>Actively participated in college events and technical hackathons.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Programming</span><span class="tag">Software Engineering</span><span
+                class="tag">Database</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" id="exp-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Software Development Intern</h3>
+                <span class="tl-company">Mauli Kavyanshu Foundation · India</span>
+              </div>
+              <span class="tl-date">Recent</span>
+            </div>
+            <ul class="tl-list">
+              <li>Contributed to the development of software solutions aimed at creating a positive social impact.</li>
+              <li>Collaborated with a team of developers to design, implement, and test core application features.</li>
+              <li>Gained hands-on experience with modern development practices and technologies.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Software Development</span><span class="tag">Teamwork</span><span class="tag">Problem
+                Solving</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- =========================================================
+       TESTIMONIALS (ACHIEVEMENTS)
+  ========================================================= -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section-title reveal-up">Key <span class="accent">Achievements</span></h2>
+      <p class="section-sub reveal-up">Hackathons and competitions I have participated in</p>
+
+      <div class="projects-grid reveal-up">
+
+        <div class="testimonial-card glass">
+          <div class="quote-icon">🏆</div>
+          <p class="testimonial-text">
+            Secured the winning position in the internal college round of the national-level Smart India Hackathon by
+            presenting an innovative technical solution to real-world problems.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#00f5ff,#a855f7)">1st</div>
+            <div>
+              <strong>Smart India Hackathon</strong>
+              <span>Internal Round Winner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="quote-icon">🥈</div>
+          <p class="testimonial-text">
+            Recognized as the Runner-Up in the annual college hackathon, demonstrating strong problem-solving skills,
+            teamwork, and quick execution under a strict time limit.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#6366f1,#ec4899)">2nd</div>
+            <div>
+              <strong>College Hackathon</strong>
+              <span>Runner-Up</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass">
+          <div class="quote-icon">🎖️</div>
+          <p class="testimonial-text">
+            Achieved 2nd Rank among many competitive teams at the Maulikavynashu Hackathon, showcasing excellent coding
+            practices and an effective final software product.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#f97316,#eab308)">2nd</div>
+            <div>
+              <strong>Maulikavynashu Hackathon</strong>
+              <span>2nd Rank</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT
+  ========================================================= -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal-up">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub reveal-up">Have a project in mind? I'd love to hear from you.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item glass">
+            <div class="contact-icon">📧</div>
+            <div>
+              <span class="ci-label">Email</span>
+              <a href="mailto:contact@chetanpatil.com" class="ci-value">contact@chetanpatil.com</a>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span class="ci-label">Location</span>
+              <span class="ci-value">India · Open to Opportunities</span>
+            </div>
+          </div>
+          <div class="contact-item glass">
+            <div class="contact-icon">💼</div>
+            <div>
+              <span class="ci-label">Availability</span>
+              <span class="ci-value">Open to opportunities</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="#" class="social-btn glass" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn glass" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn glass" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn glass" aria-label="DEV.to">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.29zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="nameInput" class="form-input" placeholder=" " required autocomplete="name" />
+            <label for="nameInput" class="form-label">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="emailInput" class="form-input" placeholder=" " required autocomplete="email" />
+            <label for="emailInput" class="form-label">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subjectInput" class="form-input" placeholder=" " />
+            <label for="subjectInput" class="form-label">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="messageInput" class="form-input form-textarea" placeholder=" " rows="5" required></textarea>
+            <label for="messageInput" class="form-label">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Send Message ✉️</span>
+          </button>
+          <p class="form-success" id="formSuccess">🎉 Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="nav-logo footer-logo">CP<span class="dot">.</span></a>
+      <p class="footer-copy">
+        Designed &amp; built by <strong>Chetan Patil</strong> · © 2024
+      </p>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub" class="footer-link">GitHub</a>
+        <a href="#" aria-label="LinkedIn" class="footer-link">LinkedIn</a>
+        <a href="#" aria-label="Twitter" class="footer-link">Twitter</a>
+        <a href="mailto:contact@chetanpatil.com" class="footer-link">Email</a>
+      </div>
+    </div>
+    <div class="footer-glow"></div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
